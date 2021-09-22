@@ -8,7 +8,7 @@ import { default as theme } from './theme.json'; // <-- app theme
 export default () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
-    <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
+    <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
       <Routes />
     </ApplicationProvider>
   </>
