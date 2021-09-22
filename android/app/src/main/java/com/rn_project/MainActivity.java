@@ -2,6 +2,7 @@ package com.rn_project;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
+import org.devio.rn.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity {
 
@@ -14,9 +15,14 @@ public class MainActivity extends ReactActivity {
     return "Caffe";
   }
 
+  // @Override
+  // protected void onCreate(Bundle savedInstanceState) {
+  // super.onCreate(null);
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(null);
+    protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);  // here
+        super.onCreate(savedInstanceState);
+    }
 }
 
 }
